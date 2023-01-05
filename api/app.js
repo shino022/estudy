@@ -53,7 +53,7 @@ if (PORT) {
   const server = app.listen(PORT, () => console.log(`Listening on ${PORT}`));
   io.attach(server, {
     cors: {
-      origin: 'http://localhost:3000',
+      origin: 'https://e-study-production-c993.up.railway.app/',
       methods: ['GET', 'POST'],
     },
   });
